@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <style>
+    :root {
+      --primary: #1e1e2f;
+      --accent: #4fd1c5;
+      --text: #333;
+      --bg: #f7f9fc;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    .profile {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile img {
+      width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .bio {
+      flex: 1;
+    }
+
+    .bio h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .bio p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    .skills {
+      margin-top: 2rem;
+    }
+
+    .skills h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skills li {
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--primary);
+      color: var(--white);
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bio {
+        margin-top: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+    <p>Driven by curiosity. Focused on building with purpose.</p>
+  </header>
+
+  <div class="container">
+    <section class="profile">
+      <img src="./profile.jpg" alt="Your photo">
+      <div class="bio">
+        <h2>Hello, I'm Juhair B. Alawi</h2>
+        <p>
+          I'm a self-taught developer and creator with a passion for building clean, functional, and meaningful digital experiences.
+          Whether it's crafting beautiful UIs or optimizing performance, I enjoy solving real-world problems through code.
+        </p>
+        <p>
+          This project is a reflection of my journey — combining design, development, and purpose into one place. I believe in simplicity, consistency, and continuous learning.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h3>Skills & Tools</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Figma</li>
+        <li>Git</li>
+        <li>Next.js</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Alawi Juhair • Built with love and code.</p>
+  </footer>
+</body>
+</html>
